@@ -1,0 +1,16 @@
+App
+
+Bem vindo Musical Solution!
+
+Avaliar cada professor da escola ( turma dia da semana - horário)
+
+Funcionalidades:
+
+- O app deverá permitir o cadastro prévio de professores, alunos e turmas ( conjunto de alunos )
+- O app deverá permitir a associação de Professores com seus alunos, sendo obrigatorio informar dia (dia da semana) e horário (hh:mm)
+- O app deverá identificar o usuário admin ( realiza os cadastros acima) do de alunos/professores 
+	- Professores visualizam as avaliações dos alunos;
+	- Alunos podem visualizar avaliações de todos os professores, mas avaliar apenas o seu(s) professor(es)
+- Os alunos deverão avaliar apenas os seus professores, nos quais já tenham tido aula alguma vez;
+	- As avaliações deverão ser atribuidas por notas (1-5 ou 1-10), conforme as diversas categorias a serem mapeadas, 
+		permitindo uma descrição prévia)
