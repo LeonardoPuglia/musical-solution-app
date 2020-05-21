@@ -8,6 +8,9 @@ import {
 
 import Login from './components/screens/Login'
 import Register from './components/templates/Register'
+import RegisterDataTemp from './components/templates/RegisterDataTemp'
+
+
 
 const ground = require('./assets/images/ground.jpg')
 
@@ -15,9 +18,8 @@ const ground = require('./assets/images/ground.jpg')
         return(
             <View style={styles.mainContainer}>   
                 <ImageBackground source={ground} style={styles.backGroundImage}>
-                    <Register />  
+                    <RegisterDataTemp />  
                 </ImageBackground> 
-                    <Register />  
             </View>
         )
   }

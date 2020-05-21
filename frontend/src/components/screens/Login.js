@@ -12,6 +12,8 @@ import Input from '../custom/Input'
 import  baseStyles from '../../assets/css/baseStyle'   
 import  loginStyles from '../../assets/css/loginStyle'   
 
+import {Button  } from 'react-native-elements'
+import Icon from 'react-native-vector-icons/SimpleLineIcons';
 
 class Login extends Component{
 
@@ -49,9 +51,19 @@ class Login extends Component{
                 </View>
                 
                 <View >
-                    <TouchableOpacity style={loginStyles.button} >
+                    {/* <TouchableOpacity style={loginStyles.button} >
                         <Text style={loginStyles.textButton}> Logar </Text>
-                    </TouchableOpacity>
+                    </TouchableOpacity> */}
+                    <Button 
+                        icon={
+                            <Icon name='login'
+                                size={15}
+                                color='white'/>
+                            }
+                        title='Logar'
+                        type='outline'
+                        buttonStyle={{borderColor:'white'}}
+                        titleStyle={{ color:'white',padding: 10}} />
 
                 </View>
                

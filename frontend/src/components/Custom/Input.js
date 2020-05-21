@@ -15,6 +15,7 @@ export default props => {
                                 placeholderTextColor={props.placeholderTextColor}
                                 maxLength={props.maxLength}
                                 secureTextEntry={props.isPassword}
+                                onChange={props.onChange}
                                 value={props.value} />
             <View style={[styles.line, { width: props.widthLine || 100 }]} />
         </>

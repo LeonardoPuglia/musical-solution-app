@@ -3,14 +3,14 @@ import { StyleSheet,  View, Text} from 'react-native'
 import {Button  } from 'react-native-elements'
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-
+import DatePicker from 'react-native-datepicker'
 
 import Input from '../custom/Input'
 
 
 import  baseStyles from '../../assets/css/baseStyle.js'  
 
-export default class Register extends Component{
+export default class RegisterDataTemp extends Component{
 
     constructor(props){
         super(props)
@@ -30,17 +30,33 @@ export default class Register extends Component{
             <View style={baseStyles.container}>
                 <View style={localStyles.containerTitle}>
                     
-                    <Text style={localStyles.titleText}>Informe o seu nome completo</Text>
+                    <Text style={localStyles.titleText}>Informe a sua data de nascimento</Text>
                 </View>
                 
                 <View style={localStyles.containerInput}> 
-                    <Input  style={localStyles.input}
-                                placeholder='Nome Completo'  
-                                placeholderTextColor='white'
-                                maxLength={50}
-                                onChange={userName => this.verifyRegister}
-                                value={this.state.userName}
-                                widthLine={210} />
+                    <DatePicker
+                        style={{width: 200}}
+                        mode="date"
+                        placeholder="Nasci em ..."
+                        format="YYYY-MM-DD"
+                        minDate="2016-05-01"
+                        maxDate="2016-06-01"
+                        confirmBtnText="Confirm"
+                        cancelBtnText="Cancel"
+                        customStyles={{
+                        dateIcon: {
+                            position: 'absolute',
+                            left: 0,
+                            top: 4,
+                            marginLeft: 0
+                        },
+                        dateInput: {
+                            marginLeft: 36
+                        }
+                        // ... You can check the source to find the other keys.
+                        }}
+                    />
+                    
                 </View>
 
                 <View style={localStyles.containerButton}>
@@ -79,7 +95,7 @@ const localStyles = StyleSheet.create({
     containerInput:{
         position:'absolute',
         flex:1,
-        marginTop: 100,
+        marginTop: 120,
         marginLeft:0,
         paddingTop:50
     },
@@ -93,7 +109,7 @@ const localStyles = StyleSheet.create({
     },
 
     containerButton:{
-        marginTop:200
+        marginTop:250
     },
     button:{
         borderColor:'white'

@@ -16,6 +16,21 @@ export default StyleSheet.create({
         width: 230
     },
 
+    container2: {
+        backgroundColor: 'purple',
+        flex:1,
+        alignItems: 'center',
+        padding: 20,
+        borderColor: 'white',
+        borderRadius: 10,
+        position: 'absolute',
+        marginTop: 30,
+        marginLeft: 13,
+        opacity: 0.7,
+        height: '100%',
+        width: '100%'
+    },
+
     line:{
         borderBottomWidth: 1,
         //width: 150,
