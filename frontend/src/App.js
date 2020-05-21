@@ -7,16 +7,17 @@ import {
   } from 'react-native';
 
 import Login from './components/screens/Login'
-import Register from './components/screens/Register'
+import Register from './components/templates/Register'
 
-const ground = require('./asserts/images/ground.jpg')
+const ground = require('./assets/images/ground.jpg')
 
   export default () => {
         return(
             <View style={styles.mainContainer}>   
                 <ImageBackground source={ground} style={styles.backGroundImage}>
-                    <Login />  
-                </ImageBackground>
+                    <Register />  
+                </ImageBackground> 
+                    <Register />  
             </View>
         )
   }

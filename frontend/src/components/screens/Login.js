@@ -7,9 +7,10 @@ import { View ,
          TouchableOpacity,
         } from 'react-native'
 
-import Input from '../Custom/Input'
+import Input from '../custom/Input'
 
-import  styles from '../../asserts/css/baseStyle'   
+import  baseStyles from '../../assets/css/baseStyle'   
+import  loginStyles from '../../assets/css/loginStyle'   
 
 
 class Login extends Component{
@@ -26,25 +27,30 @@ class Login extends Component{
    render(){
 
         return(
-            <View style={styles.container}> 
-                <Image source={require('../../asserts/images/logo.png')} style={styles.logo}  />
+            <View style={baseStyles.container}> 
+                <Image source={require('../../assets/images/logo.png')} style={loginStyles.logo}  />
 
-                <View style={styles.containerInput}>
+                <View style={loginStyles.containerInput}>
                     
 
                     <Input placeholder='Email'
                            placeholderTextColor='white'
-                           maxLength={20} />
+                           maxLength={20} 
+                           style={loginStyles.input}
+                           widthLine={150}/>
 
                     <Input placeholder='Senha'
-                           placeholderTextColor='white'
-                           maxLength={20} />
+                           placeholderTextColor='white' 
+                           isPassword ={true}
+                           maxLength={20}
+                           style={loginStyles.input}
+                           widthLine={150} />
                    
                 </View>
                 
                 <View >
-                    <TouchableOpacity style={styles.button} >
-                        <Text style={styles.textButton}> Logar </Text>
+                    <TouchableOpacity style={loginStyles.button} >
+                        <Text style={loginStyles.textButton}> Logar </Text>
                     </TouchableOpacity>
 
                 </View>

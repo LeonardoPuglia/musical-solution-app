@@ -1,21 +1,6 @@
 import {StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
-    container: {
-        backgroundColor: 'purple',
-        flex:1,
-        alignItems: 'center',
-        padding: 20,
-        borderColor: 'white',
-        borderRadius: 10,
-        position: 'absolute',
-        marginTop: 30,
-        marginLeft: 13,
-        opacity: 0.7,
-        height: 350,
-        width: 230
-    },
-
     logo:{
         position: 'absolute',
         marginTop: 10,
@@ -23,6 +8,7 @@ export default StyleSheet.create({
         height: 100
 
     },
+
 
     containerInput:{
         flex:1,
@@ -40,13 +26,6 @@ export default StyleSheet.create({
         
     },
 
-    // passLine:{
-    //     borderBottomWidth: 1,
-    //     width: -100,
-    //     borderBottomColor: 'white',
-    //     marginTop:-11
-        
-    // },
 
     input:{
         marginTop: 15,
@@ -57,15 +36,16 @@ export default StyleSheet.create({
     button:{
         alignContent:'center',
         borderRadius: 5,
-        backgroundColor: 'white',
+        backgroundColor: 'violet',
         marginTop:20,
-        opacity: 0.5,
+        //opacity: 0.5,
         width: 100,
         height:40
     },
 
     textButton:{
         color: 'black',
+        fontWeight: 'bold',
         textAlign:'center',
         marginTop: 10,
         fontSize: 16

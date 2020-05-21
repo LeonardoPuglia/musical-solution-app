@@ -5,19 +5,18 @@ import { View ,
         } from 'react-native'
 
 
-import  styles from '../../asserts/css/baseStyle'   
-
-//import  {input, line } from '../../asserts/css/baseStyle'   
+import  styles from '../../assets/css/baseStyle'   
 
 export default props => {
     return(
         <>
-            <TextInput style={styles.input} 
+            <TextInput style={props.style} 
                                 placeholder={props.placeholder}
                                 placeholderTextColor={props.placeholderTextColor}
                                 maxLength={props.maxLength}
-                                />
-            <View style={styles.line} />
+                                secureTextEntry={props.isPassword}
+                                value={props.value} />
+            <View style={[styles.line, { width: props.widthLine || 100 }]} />
         </>
     )
 }
